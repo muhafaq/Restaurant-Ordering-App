@@ -1,0 +1,72 @@
+<html>
+    
+<head>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-section">
+            <h1>Afaq's Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </div>
+    </header>
+
+    <main>
+
+		<div class="feed" id="feed">
+			<!-- Menue items here!! -->
+		</div>
+
+        <div id="order-items-container">
+                <h1 class="order-bucket-heading" id="order-bucket-heading"> Your order </h1>
+                <div class="order-box" id="order-box"> <!-- Order items here!! --> </div>
+                <div class="total-container" id="total-container">
+                    <h1> Total price: </h1>
+                    <p id="final-price"> </p>
+                </div>
+        </div>
+        <div> 
+            <button id="complete-order-btn" class="complete-order-btn"> Complete order </button> 
+        </div>
+
+	</main>
+
+    <div class="checkout-form" id="checkout-form">
+        <div id="model-inner">        
+            <form id="payment-form">
+                <h1 class="payment-form-heading">Enter card details</h1>
+                <div class="input-fields">
+                        <input type="text" name="fullName" placeholder="Enter your name" required>
+                        <!-- <input type="number" name="cardNumber" placeholder="Enter card number" required> -->
+                        <input type="text" id="cc-number" name="cc-number" placeholder="Enter card number" pattern="[0-9]{13,19}" required>
+                        <input type="password" name="cvv" placeholder="Enter CVV" required>
+                </div>
+
+                <div class="payment-btn">
+                <button type="submit" class="payment-btn" id="payment-btn">Pay</button>
+                </div>  
+            </form>     
+        </div>
+    </div>
+    
+	<script src="index.js" type="module"></script>
+    
+</body>
+
+</html>
+
